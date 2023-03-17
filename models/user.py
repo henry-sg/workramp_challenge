@@ -10,8 +10,8 @@ class User:
         self.password = password
 
 
-def create_user() -> User:
+def create_user(password: str = None) -> User:
     # It would be better to get random users from database
     email = os.getenv("EMAIL")
-    password = os.getenv("PASSWORD")
+    password = os.getenv("PASSWORD") if password is None else password
     return User(email, password)

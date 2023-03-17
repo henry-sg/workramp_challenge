@@ -11,3 +11,5 @@ class LoginPage(BasePage):
         self.page.click("button[type='submit']")
 
 
+    def get_login_error(self) -> str:
+        return self.page.locator("div.login-error").text_content()
