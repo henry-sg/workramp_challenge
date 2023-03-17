@@ -10,4 +10,4 @@ class BasePage:
         self.page.goto(self.url)
 
     def get_modal(self, title: str) -> Locator:
-        return self.page.locator("div.my-modal").filter(has_text=title).first
+        return self.page.locator("div.my-modal").filter(has_text=title)

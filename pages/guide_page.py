@@ -14,7 +14,6 @@ class GuidePage(BasePage):
             self.page.locator(
                 "div.task-assignment-body div.guide-sidebar div.editable-title img"
             ).click()
-
             self.get_modal("Enter a task title here").locator(
                 "input.form-input-text"
             ).fill(task.title)
