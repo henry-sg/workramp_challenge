@@ -43,7 +43,7 @@ To run all tests simply execute:
 ```bash
 $ pytest -s tests --headed --slowmo 1000
 ```
-This will launch the browser and run it on slow motion (1 second after each Playwright action). If you want to run it faster remover --slowmo 1000 parameter or if you want to runint on headless mode (without launching a browser) remove --headed
+This will launch the browser and run it on slow motion (1 second after each Playwright action). If you want to run it faster remove --slowmo 1000 parameter or if you want to run it on headless mode (without launching a browser) remove --headed
 
 To run a specific test execute:
 ```bash
