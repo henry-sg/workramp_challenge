@@ -28,13 +28,16 @@ $ playwright install
 ```
 
 ## Files Structure
-models: contains base data modeles, used to represent users, guides and tasks
-pages: page of models for the pages used or interated with in the tests
-tests: tests cases
+- models: contains base data modeles, used to represent users, guides and tasks
+- pages: page of models for the pages used or interated with in the tests
+- tests: tests cases
 
 ## Running Tests
 
 Before running the tests you must create a file called .env in the root directory of the project. This file will contain the information to handle user authentication. You can just rename the file example.env to .env and modify it with correct credentials
+```bash
+mv example.env .env
+```
 
 To run all tests simply execute:
 ```bash
