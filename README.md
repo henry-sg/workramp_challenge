@@ -28,8 +28,8 @@ $ playwright install
 ```
 
 ## Files Structure
-- models: contains base data modeles, used to represent users, guides and tasks
-- pages: page of models for the pages used or interated with in the tests
+- models: contains base data models, used to represent users, guides and tasks
+- pages: page objects for the pages used or interacted with in the tests
 - tests: tests cases
 
 ## Running Tests
