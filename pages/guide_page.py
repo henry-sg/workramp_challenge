@@ -39,7 +39,5 @@ class GuidePage(BasePage):
                 ).filter(has_text="Add Task").click()
             self.new_task(task)
 
-        sleep(3)
-
     def created_tasks_count(self) -> int:
         return len(self.page.locator("div.guide-sidebar-task-list > div").all())

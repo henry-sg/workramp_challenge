@@ -18,6 +18,8 @@ def test_new_guide(page: Page, base_url, login_fixture) -> None:
     admin_dashboard_page = AdminDashboardPage(page, guide)
     admin_dashboard_page.new_guide()
 
+    page.wait_for_load_state('networkidle')
+
     guide_page = GuidePage(page)
     guide_page.add_tasks(guide)
 

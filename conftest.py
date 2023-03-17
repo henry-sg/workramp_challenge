@@ -7,7 +7,7 @@ from models.user import create_user
 
 @pytest.fixture()
 def login_fixture(page: Page):
-    # Would be better to login using the API to get a token, but this is a demo
+    # Would be better to login using the API to get a token, but for the sake of the challenge I'm using the UI
     login_page = LoginPage(page)
     login_page.goto()
 

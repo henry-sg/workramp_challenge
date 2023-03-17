@@ -36,7 +36,7 @@ $ playwright install
 
 Before running the tests you must create a file called .env in the root directory of the project. This file will contain the information to handle user authentication. You can just rename the file example.env to .env and modify it with correct credentials
 ```bash
-mv example.env .env
+$ mv example.env .env
 ```
 
 To run all tests simply execute:
